@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+**/node_modules/
+package-lock.json
+
+# Build outputs
+out/
+*/out/
+dist/
+*.vsix
+*.tsbuildinfo
+*.lsif
+*.db
+
+# Logs
+logs/
+*.log
+npm-debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VS Code specific files
+.vscode-test/
+.vscode/
+*.vsix
+.vs/
+*/.vs/
+tsconfig.lsif.json
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Test coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp

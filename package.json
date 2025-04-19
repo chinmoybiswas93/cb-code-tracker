@@ -1,10 +1,11 @@
 {
   "name": "cb-code-tracker",
-  "displayName": "cb-code-tracker",
-  "description": "'Personal coding time tracker'",
+  "displayName": "CB Code Tracker",
+  "description": "Track your coding time in VS Code",
   "version": "0.0.1",
+  "publisher": "user",
   "engines": {
-    "vscode": "^1.99.0"
+    "vscode": "^1.85.0"
   },
   "categories": [
     "Other"
@@ -16,26 +17,19 @@
   "contributes": {
     "commands": [
       {
-        "command": "cb-code-tracker.sts",
-        "title": "Show Todays Stats"
+        "command": "cb-code-tracker.showTime",
+        "title": "Show Coding Time"
       },
       {
-        "command": "cb-code-tracker.showTime",
-        "title": "Show Current Time"
+        "command": "cb-code-tracker.sts",
+        "title": "Show Coding Statistics"
       }
     ]
   },
   "scripts": {
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "vscode-test"
+    "package": "vsce package"
   },
-  "devDependencies": {
-    "@types/vscode": "^1.99.0",
-    "@types/mocha": "^10.0.10",
-    "@types/node": "20.x",
-    "eslint": "^9.23.0",
-    "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.1"
+  "dependencies": {
+    "@types/vscode": "^1.99.1"
   }
 }

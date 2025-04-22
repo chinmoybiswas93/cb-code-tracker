@@ -11,9 +11,9 @@ A Visual Studio Code extension that displays the current time in the status bar 
 
 ## Screenshots
 
-![Screenshot of time count](https://prnt.sc/HBYf4w-Gxyif)
-![Screenshot of commands](https://prnt.sc/uFsHTeB8dXJD)
-![Screenshot of Stats](https://prnt.sc/9FSnhPCrfwjG)
+Screenshot of time count - https://prnt.sc/HBYf4w-Gxyif
+Screenshot of commands - https://prnt.sc/uFsHTeB8dXJD
+Screenshot of Stats - https://prnt.sc/9FSnhPCrfwjG
 
 ## Installation
 

@@ -3,7 +3,11 @@
   "displayName": "CB Code Tracker",
   "description": "Track your coding time in VS Code",
   "version": "0.0.1",
-  "publisher": "user",
+  "publisher": "chinmoybiswas93",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chinmoybiswas93/cb-code-tracker.git"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },

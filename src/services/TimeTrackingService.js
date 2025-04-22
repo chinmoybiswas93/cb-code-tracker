@@ -152,11 +152,17 @@ class TimeTrackingService {
     const stats = Object.entries(this.timeData)
       .sort((a, b) => new Date(b[0]).getTime() - new Date(a[0]).getTime())
       .map(([date, data]) => {
+        const dateObj = new Date(date);
+        const weekday = dateObj.toLocaleDateString("en-US", {
+          weekday: "short",
+        });
+        const day = dateObj.getDate().toString().padStart(2, "0");
+        const month = dateObj
+          .toLocaleDateString("en-US", { month: "short" })
+          .toUpperCase();
+        const formattedDate = `${weekday} ${day}-${month}`;
         const formattedTime = this.formatTime(data.totalCodingTime);
-        const lastSaved = data.lastSaved
-          ? new Date(data.lastSaved).toLocaleTimeString()
-          : "N/A";
-        return `${date}: ${formattedTime} (Last saved: ${lastSaved})`;
+        return `${formattedDate} :: ${formattedTime}`;
       })
       .join("\n");
 

@@ -31,6 +31,7 @@
     ]
   },
   "scripts": {
+    "prepackage": "node -e \"if(!require('fs').existsSync('LICENSE.md')) { console.log('\\x1b[33mWARNING\\x1b[0m  LICENSE, LICENSE.md, or LICENSE.txt not found'); }\"",
     "package": "vsce package"
   },
   "dependencies": {

@@ -7,7 +7,6 @@ package-lock.json
 out/
 */out/
 dist/
-*.vsix
 *.tsbuildinfo
 *.lsif
 *.db
@@ -23,7 +22,6 @@ yarn-error.log*
 # VS Code specific files
 .vscode-test/
 .vscode/
-*.vsix
 .vs/
 */.vs/
 tsconfig.lsif.json
